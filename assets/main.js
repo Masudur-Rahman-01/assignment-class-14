@@ -41,36 +41,6 @@ sign_up_form.addEventListener('submit', function (e) {
 // - Product with LS start here
 const product_list = document.getElementById('product_list');
 
-const product = [
-    {
-        name: 'Cap Modern',
-        price: 220,
-        sale: 200,
-        photo: 'https://images.unsplash.com/photo-1560774358-d727658f457c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2FwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
-    },
-    {
-        name: 'Cap Modern',
-        price: 250,
-        sale: 220,
-        photo: 'https://images.unsplash.com/photo-1534215754734-18e55d13e346?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2FwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
-    },
-    {
-        name: 'Cap Exclusive',
-        price: 350,
-        sale: 290,
-        photo: 'https://images.unsplash.com/photo-1589831377283-33cb1cc6bd5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2FwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
-    },
-    {
-        name: 'Cap Exclusive',
-        price: 350,
-        sale: 300,
-        photo: 'https://images.unsplash.com/photo-1619184324666-a2912be71bad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNhcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
-    },
-
-]
-
-// send data from local storage
-sendData('products', product)
 // get data from local storage
 let products = getData('products');
 
@@ -96,35 +66,7 @@ products.map(data => {
 //- Team member with LS start here
 const member_list = document.getElementById('member_list');
 
-const member = [
-    {
-        name: 'Asraful Alam',
-        skill: 'JavaScript Developer',
-        location: 'Bangladesh',
-        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwF7kWqN2SdwXHU9HmCLx50dlX0IOKt7AblQ&usqp=CAU'
-    },
-    {
-        name: 'Jalal Sharif',
-        skill: 'Python Developer',
-        location: 'Bangladesh',
-        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFG2Jg04faXxHFvxOUxF1XPMovdqhfNRnpRg&usqp=CAU'
-    },
-    {
-        name: 'Ahmed Iqbal',
-        skill: 'Java Developer',
-        location: 'Bangladesh',
-        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-pGsRfXb8m7OPPfQLo9ZKkHskFzYUhehSHA&usqp=CAU'
-    },
-    {
-        name: 'Jakir Hossain',
-        skill: 'Java Developer',
-        location: 'Bangladesh',
-        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTumHEiP5nXTEl1J1K9EJYn0zlYzg009rOoYA&usqp=CAU'
-    },
-]
 
-// send data from local storage
-sendData('members', member)
 // get data from local storage
 let members = getData('members');
 
